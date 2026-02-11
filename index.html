@@ -210,7 +210,27 @@
 
         /* ===== Visit / Contact ===== */
         .visit-section {
-            background: #fbead3;
+            background: linear-gradient(180deg, #fbead3 0%, #fff7e6 55%, #ffffff 100%);
+        }
+
+        .visit-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 1.8rem 1.9rem;
+            box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+            height: 100%;
+        }
+
+        .visit-tag {
+            display: inline-block;
+            padding: 0.15rem 0.6rem;
+            border-radius: 999px;
+            background: rgba(244, 180, 26, 0.1);
+            color: var(--brand-brown);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            margin-bottom: 0.3rem;
         }
 
         .visit-hours li {
@@ -223,6 +243,32 @@
 
         .visit-hours li:last-child {
             border-bottom: none;
+        }
+
+        /* ===== Offers note ===== */
+        .offer-note {
+            background: rgba(255, 247, 230, 0.8);
+            border-left: 4px solid var(--brand-gold);
+            border-radius: 14px;
+            padding: 0.9rem 1.1rem;
+            font-size: 0.9rem;
+        }
+
+        .offer-note-title {
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            font-size: 0.78rem;
+            color: var(--brand-brown);
+            margin-bottom: 0.35rem;
+        }
+
+        .offer-note ul {
+            margin-bottom: 0.4rem;
+            padding-left: 1.1rem;
+        }
+
+        .offer-note li {
+            margin-bottom: 0.1rem;
         }
 
         /* ===== Footer ===== */
@@ -474,42 +520,63 @@
 
     <!-- Visit / Contact -->
     <section id="visit" class="visit-section py-5">
-        <div class="container py-3">
+        <div class="container py-4">
             <h2 class="section-heading">Visit Xitt Kodi House</h2>
-            <div class="row gy-4 align-items-start">
-                <div class="col-md-6">
-                    <h3 class="h5 mb-3">Find us</h3>
-                    <p class="mb-1 fw-semibold">2A Cardington Square</p>
-                    <p class="mb-3">Hounslow, TW4 6AH</p>
-                    <div class="d-flex flex-wrap gap-2 mb-3">
-                        <a
-                            class="btn btn-brand"
-                            href="https://www.google.com/maps/search/?api=1&query=2A+Cardington+Square+TW4+6AH"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Open in Google Maps
-                        </a>
-                        <a class="btn btn-outline-dark" href="tel:01234567890">
-                            Call to book: 01234&nbsp;567890
-                        </a>
+            <div class="row gy-4 align-items-stretch">
+                <div class="col-lg-6">
+                    <div class="visit-card h-100">
+                        <span class="visit-tag">Find us in Hounslow</span>
+                        <h3 class="h5 mb-3 mt-1">A little corner of Goa near Heathrow</h3>
+                        <p class="mb-1 fw-semibold">2A Cardington Square</p>
+                        <p class="mb-3">Hounslow, TW4 6AH · United Kingdom</p>
+                        <div class="d-flex flex-wrap gap-2 mb-3">
+                            <a
+                                class="btn btn-brand"
+                                href="https://www.google.com/maps/search/?api=1&query=2A+Cardington+Square+TW4+6AH"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Open in Google Maps
+                            </a>
+                            <a class="btn btn-outline-dark" href="tel:01234567890">
+                                Call to book: 01234&nbsp;567890
+                            </a>
+                        </div>
+                        <p class="mb-2">
+                            We are a short drive from Heathrow and a stroll from local bus routes –
+                            perfect for a quick curry after a shift or a slow Goan-style dinner.
+                        </p>
+                        <p class="mb-0">
+                            For parties, celebrations or catering enquiries, speak to our team and
+                            we’ll help plan a feast from the Konkan coast.
+                        </p>
                     </div>
-                    <p class="mb-0">
-                        For parties, celebrations or catering enquiries, speak to our team and we will
-                        help bring a Goan feast to your table.
-                    </p>
                 </div>
-                <div class="col-md-6">
-                    <h3 class="h5 mb-3">Opening hours</h3>
-                    <ul class="list-unstyled visit-hours mb-3">
-                        <li><span>Monday – Thursday</span><span>12:00 – 22:00</span></li>
-                        <li><span>Friday</span><span>12:00 – 22:30</span></li>
-                        <li><span>Saturday</span><span>12:00 – 22:30</span></li>
-                        <li><span>Sunday</span><span>12:00 – 21:30</span></li>
-                    </ul>
-                    <p class="mb-0">
-                        Walk-ins are welcome, but weekends can get busy – a quick call ahead is always a good idea.
-                    </p>
+                <div class="col-lg-6">
+                    <div class="visit-card h-100">
+                        <span class="visit-tag">Hours & everyday offers</span>
+                        <h3 class="h5 mb-3 mt-1">When the stove is on</h3>
+                        <ul class="list-unstyled visit-hours mb-3">
+                            <li><span>Monday – Thursday</span><span>12:00 – 22:00</span></li>
+                            <li><span>Friday</span><span>12:00 – 22:30</span></li>
+                            <li><span>Saturday</span><span>12:00 – 22:30</span></li>
+                            <li><span>Sunday</span><span>12:00 – 21:30</span></li>
+                        </ul>
+                        <p class="mb-3">
+                            Walk-ins are welcome, but weekends can get busy – a quick call ahead is always a good idea.
+                        </p>
+                        <div class="offer-note mt-1">
+                            <p class="offer-note-title mb-0">Everyday offers</p>
+                            <ul class="mb-0">
+                                <li>Heathrow staff – 10% off</li>
+                                <li>NHS staff – 10% off</li>
+                                <li>Bus drivers – 10% off</li>
+                            </ul>
+                            <p class="mb-0">
+                                Just show a visible staff ID when you order.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
